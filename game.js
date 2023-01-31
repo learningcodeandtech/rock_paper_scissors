@@ -1,3 +1,6 @@
+
+// Declare a function that returns rock paper or scissors randomly
+
 function getComputerChoice() {
     let randomChoice = Math.floor(Math.random() * 3)
 
@@ -9,3 +12,24 @@ function getComputerChoice() {
         return 'SCISSORS'
     }
 }
+
+// Write a function that plays Rock Paper Scissors and return the Winner
+
+function playRound(playerSelection, computerSelection) {
+    if (
+        (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') ||
+        (playerSelection === 'SCISSORS' && computerSelection === 'PAPER') ||
+        (playerSelection === 'PAPER' && computerSelection === 'ROCK')
+    ) {
+
+        return "You win";
+    } else if (playerSelection === computerSelection) {
+        return "Continue"
+    } else {
+        return "You loose"
+    }  
+
+}
+
+const playerSelection = "ROCK";
+const computerSelection = getComputerChoice();
