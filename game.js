@@ -33,3 +33,16 @@ function playRound(playerSelection, computerSelection) {
 
 const playerSelection = "ROCK";
 const computerSelection = getComputerChoice();
+
+// Write a function to play 5 times
+
+function game() {
+    for (let i = 0; i < 5; i ++){
+        const playerSelection = "ROCK";
+        const computerSelection = getComputerChoice();
+       console.log(playRound(playerSelection, computerSelection));
+    }
+    
+}
+
+game();
